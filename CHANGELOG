@@ -1,0 +1,5 @@
+1.0.0:
+	Basic functionality -- include 'crystalline/spec' in your spec_helper, include
+		'crystalline/rake' in your rake file. Receive usefule stuff.
+	
+
