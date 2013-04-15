@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Crystalline::VERSION
   gem.authors       = ["Joe Fredette"]
   gem.email         = ["jfredett@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{A tool which installs common Rake tasks, Gem dependencies, and RSpec Helpers used in my gems.}
+  gem.summary       = %q{A tool which installs common Rake tasks, Gem dependencies, and RSpec Helpers used in my gems.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
