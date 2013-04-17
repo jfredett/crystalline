@@ -1,3 +1,4 @@
 require "crystalline/version"
 
-require 'tilt'
+require 'crystalline/generators'
+require 'crystalline/gli_helpers'

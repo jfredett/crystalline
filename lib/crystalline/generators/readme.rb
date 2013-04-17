@@ -1,22 +1,12 @@
-require 'tilt'
-
 module Crystalline
   module Generators
-    class Readme
-      def initialize(user, name)
-        @user = user
-        @name = name
+    class Readme < Generator
+      def self.file_name
+        'README.md'
       end
 
-      def path
-        File.expand_path(
-          File.join(
-            File.dirname(File.expand_path(__FILE__)),
-            '..',
-            'templates',
-            'README.md.erb'
-          )
-        )
+      def self.command_name
+        :readme
       end
 
       def build_status_badge
@@ -35,17 +25,6 @@ module Crystalline
         "[![Gem Version](https://badge.fury.io/rb/#{@name}.png)](http://badge.fury.io/rb/#{@name})"
       end
 
-      def template
-        @template ||= Tilt.new path
-      end
-
-      def self.generate!(user, name)
-        new(user, name).generate!
-      end
-
-      def generate!
-        template.render self
-      end
     end
   end
 end
