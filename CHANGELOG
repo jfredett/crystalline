@@ -1,3 +1,6 @@
+1.1.1:
+	Added `travis` subcommand to crystalize.
+
 1.1.0:
 	Implemented Generators for various files:
 		- Rakefile - includes crystalline tasks and bundler/setup
