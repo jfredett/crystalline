@@ -5,7 +5,8 @@ def generator_command(klass)
       gem_name = File.basename(File.expand_path('.'))
       user = ENV['USER']
 
-      file_path = File.join('./', klass.prefix, klass.file_name)
+      file_name = if klass.hidden? then ".#{klass.file_name}" else klass.file_name end
+      file_path = File.join('./', klass.prefix, file_name)
 
       if File.exists?(file_path)
         puts klass.generate!(user, gem_name)

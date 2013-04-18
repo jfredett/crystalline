@@ -30,6 +30,10 @@ module Crystalline
         ''
       end
 
+      def self.hidden?
+        false
+      end
+
       def path
         File.expand_path(
           File.join(
