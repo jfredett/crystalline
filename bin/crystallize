@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require 'gli'
+begin # XXX: Remove this begin/rescue before distributing your app
+  require 'crystalline'
+rescue LoadError
+  STDERR.puts "In development, you need to use `bundle exec bin/crystalline` to run your app"
+  STDERR.puts "At install-time, RubyGems will make sure lib, etc. are in the load path"
+  exit 64
+end
+
+include GLI::App
+
+program_desc ''
+
+version Crystalline::VERSION
+
+desc 'Generate a README for the current app'
+command :readme do |c|
+
+  c.action do |global, options, args|
+    require 'crystalline/generators/readme'
+    binding.pry
+    gem_name = File.basename(File.dirname(__FILE__))
+    Crystalline::Generators::Readme.generate!(gem_name)
+
+  end
+
+end
+
+
+exit run(ARGV)
