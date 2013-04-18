@@ -1,3 +1,13 @@
+1.1.0:
+	Implemented Generators for various files:
+		- Rakefile - includes crystalline tasks and bundler/setup
+		- spec_helper - includes crystalline spec_helper/helper macros, and
+		- travis - creates a standard .travis.yml file that tests all major ruby
+							 versions >1.9 (including JRuby and Rubinius)
+		- README - creates a standard boilerplate README.md that includes badge
+							 links for common services (travis, coveralls, codeclimate, and
+							 gem version from fury)
+	
 1.0.0:
 	Basic functionality -- include 'crystalline/spec' in your spec_helper, include
 		'crystalline/rake' in your rake file. Receive usefule stuff.
