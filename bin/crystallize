@@ -17,5 +17,6 @@ version Crystalline::VERSION
 
 generator_command Crystalline::Generators::Readme
 generator_command Crystalline::Generators::SpecHelper
+generator_command Crystalline::Generators::Rakefile
 
 exit run(ARGV)
