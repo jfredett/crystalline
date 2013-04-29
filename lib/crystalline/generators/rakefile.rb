@@ -2,7 +2,7 @@ module Crystalline
   module Generators
     class Rakefile < Generator
       def self.file_name
-        'Rakefile.erb'
+        'Rakefile'
       end
 
       def self.command_name
