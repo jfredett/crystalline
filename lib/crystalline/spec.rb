@@ -4,5 +4,3 @@ require 'coveralls'
 
 require 'crystalline/spec/rspec'
 require 'crystalline/spec/mock'
-
-Coveralls.wear!
