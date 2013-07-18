@@ -13,8 +13,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = ""
 
 
-  gem.add_dependency "rspec"
-  gem.add_dependency "rspec-spies"
+  gem.add_dependency "rspec", '2.14.0'
   gem.add_dependency "mutant"
   gem.add_dependency "coveralls"
 
