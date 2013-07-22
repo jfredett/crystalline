@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "flog"
   gem.add_dependency "flay"
+  gem.add_dependency 'reek'
 
   gem.add_dependency "pry"
 
@@ -26,6 +27,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'gli'
   gem.add_dependency 'tilt'
+
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
