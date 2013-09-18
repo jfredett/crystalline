@@ -20,6 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "flog"
   gem.add_dependency "flay"
   gem.add_dependency 'reek'
+  gem.add_dependency 'rubocop'
 
   gem.add_dependency "pry"
 
