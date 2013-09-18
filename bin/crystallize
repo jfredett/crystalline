@@ -19,5 +19,6 @@ generator_command Crystalline::Generators::Readme
 generator_command Crystalline::Generators::SpecHelper
 generator_command Crystalline::Generators::Rakefile
 generator_command Crystalline::Generators::Travis
+generator_command Crystalline::Generators::Rubocop
 
 exit run(ARGV)

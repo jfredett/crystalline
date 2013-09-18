@@ -2,6 +2,7 @@ require 'crystalline/rake/flay'
 require 'crystalline/rake/flog'
 require 'crystalline/rake/mutant'
 require 'crystalline/rake/spec'
+require 'crystalline/rake/rubocop'
 
 require 'pry'
 
