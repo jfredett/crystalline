@@ -1,6 +1,6 @@
 desc 'run mutant specs'
-task :mutant, [:gem_name, :root_module] do |_, args|
+task :mutant, [:root_module] do |_, args|
   puts "#### MUTANT TESTING ####"
-  system "mutant -I lib -r #{args[:gem_name]} --rspec-#{ENV['MUTANT_MODE'] || 'full'} #{args[:root_module]}"
+  system "mutant --rspec '::#{args[:root_module]}*'"
   puts "########################"
 end
