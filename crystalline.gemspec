@@ -28,6 +28,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'gli'
   gem.add_dependency 'tilt'
+  gem.add_dependency 'erubis'
 
 
   gem.files         = `git ls-files`.split($/)
