@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
 
 
   gem.add_dependency "rspec", '~> 2.14.0'
-  gem.add_dependency "mutant", '~> 0.3.0.rc1'
+  gem.add_dependency "mutant", '~> 0.5.5'
   gem.add_dependency "coveralls"
 
   gem.add_dependency "flog"
