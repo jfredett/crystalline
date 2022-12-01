@@ -13,8 +13,8 @@ Gem::Specification.new do |gem|
   gem.homepage      = ""
 
 
-  gem.add_dependency "rspec", '~> 2.14.0'
-  gem.add_dependency "mutant", '~> 0.5.5'
+  gem.add_dependency "rspec"
+  gem.add_dependency "rspec-its"
   gem.add_dependency "coveralls"
 
   gem.add_dependency "flog"
